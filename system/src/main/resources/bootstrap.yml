@@ -1,0 +1,14 @@
+server:
+  port: 3377
+spring:
+  application:
+    name: blade
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml
+
+# 因为application 是dev环境所以nacos上 dataId名称为：blade-dev.yaml
